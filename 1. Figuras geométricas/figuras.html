@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./figuras.js"></script>      
+</head>
+<body>
+    <header>
+        <div class="container_title_header">
+            <h1 class="title_header">Calculando ando</h1>
+            <p class="description_header">Calcula el perimetro y área de algunas figuras geométricas</p>
+        </div>
+        <div class="container_figuras_header">
+            <img src="./img/icons-octaedro-50.png" alt="Figuras geométricas" class="figuras_header">
+        </div>
+    </header>
+    <main class="main_container">
+        <section class="seccion_container cuadrado_container">
+            <h2>Cuadrado</h2>
+            <figure class="figuras_container">
+                <img src="./img/icons-square-96.png" alt="Cuadrado" class="figura_main cuadrado_main">
+            </figure>
+            <form class="form_cuadrado form_figura">
+                <div class="container_input">
+                    <label for="lado_cuadrado">Lado</label>
+                    <input type="number" id="lado_cuadrado" name="lado_cuadrado" placeholder="Longitud de un lado" class="input input_cuadrado">
+                </div>
+                <button type="button" onclick="calcularPerimetroCuadrado()" class="button_primary button_perimetro_cuadrado">Calcular perímetro</button>
+                <button type="button" onclick="calcularAreaCuadrado()" class="button_primary button_area_cuadrado">Calcular área</button>
+            </form>
+            <div id="container_resultado_cuadrado" class="container_resultado_cuadrado container_resultados">
+            </div>
+        </section>
+        <section class="seccion_container triangulo_container">
+            <h2>Triángulo</h2>
+            <figure class="figuras_container">
+                <img src="./img/icons-triangulo-100.png" alt="triangulo" class="figura_main triangulo_main">
+            </figure>
+            <form class="form_triangulo form_figura">
+                <div class="container_input">
+                    <label for="lado1_triangulo">Lado 1</label>
+                    <input type="number" id="lado1_triangulo" name="lado1_triangulo" placeholder="Longitud de lado 1" class="input input1_triangulo">
+                    <label for="lado1_triangulo">Lado 2</label>
+                    <input type="number" id="lado2_triangulo" name="lado2_triangulo" placeholder="Longitud de lado 2" class="input input2_triangulo">
+                    <label for="lado3_triangulo">Lado 3</label>
+                    <input type="number" id="lado3_triangulo" name="lado3_triangulo" placeholder="Longitud de lado 3" class="input input3_triangulo">
+                </div>
+                <button type="button" onclick="calcularPerimetroTriangulo()" class="button_primary button_perimetro_triangulo">Calcular perímetro</button>
+                <button type="button" onclick="calcularAreaTriangulo()" class="button_primary button_area_triangulo">Calcular área</button>
+            </form>
+            <div id="container_resultado_triangulo" class="container_resultado_triangulo container_resultados">
+            </div>            
+        </section>
+        <section class="seccion_container circulo_container">
+            <h2>Círculo</h2>
+            <figure class="figuras_container">
+                <img src="./img/icons-círculo-100.png" alt="círculo" class="figura_main circulo_main">
+            </figure>
+            <form class="form_circulo form_figura">
+                <div class="container_input">
+                    <label for="radio_circulo">Radio</label>
+                    <input type="number" id="radio_circulo" name="radio_circulo" placeholder="Longitud del radio" class="input input_circulo">
+                </div>
+                <button type="button" onclick="calcularPerimetroCirculo()" class="button_primary button_perimetro_circulo">Calcular perímetro</button>
+                <button type="button" onclick="calcularAreaCirculo()" class="button_primary button_area_circulo">Calcular área</button>
+            </form>
+            <div id="container_resultado_circulo" class="container_resultado_circulo container_resultados">
+            </div>        
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>Jonathan Acevedo</p>
+        </div>
+        <div>
+            <p>Hecho con cariño 😁</p>
+        </div>
+    </footer>
+</body>
+</html>
