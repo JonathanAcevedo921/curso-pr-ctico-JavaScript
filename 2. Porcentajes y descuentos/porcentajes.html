@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+    <link rel="stylesheet" href="./css/indexDescuentos.css">
+    <script src="./porcentajes.js"></script>      
+</head>
+<body>
+    <header>
+        <div class="container_title_header">
+            <h1 class="title_header">Calculando ando</h1>
+            <p class="description_header">Calcula el precio final de tu producto</p>
+        </div>
+        <figure class="container_descuento_header">
+            <img src="./img/icons8-porcentaje-80.png" alt="Porcentaje" class="figuras_header">
+        </figure>
+    </header>
+    <main class="main_container">
+        <section class="seccion_container">
+            <h2>Descuentos</h2>
+            <form class="form_precio">
+                <div class="container_input">
+                    <label for="precio_producto">Precio del producto</label>
+                    <input type="number" id="precio_producto" name="precio_producto" placeholder="Ej: $1000000" class="input input_cuadrado" min="0">
+                </div>
+                <div class="container_input">
+                    <label for="cupon_descuento">Cupón de descuento</label>
+                    <input type="text" id="cupon_descuento" name="cupon_descuento" placeholder="Cupón" class="input input_cuadrado">
+                </div>
+                <button type="button" onclick="onClickButtom()" class="button_primary">Calcular precio</button>
+            </form>
+            <div id="container_resultado" class="container_resultado">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>Jonathan Acevedo</p>
+        </div>
+        <div>
+            <p>Hecho con cariño 😁</p>
+        </div>
+    </footer>
+</body>
+</html>
